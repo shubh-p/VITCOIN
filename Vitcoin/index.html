@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>VITCOIN</title>
+     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+     <link rel="stylesheet" href="index.css">
+     <script src="index.js" defer></script>
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <script>
+          function subscribe() {
+              alert("Thank you! You have been subscribed.");
+          }
+          </script>
+</head>
+
+<body>
+     <header>
+          <div class="header-content">
+               <nav>
+                    <div class="logo">
+                         <img src="./images/Logo.png" alt="logo">
+                         <h3> VITCOIN <sup>VTC</sup></h3>
+                    </div>
+                    <div class="links" id="links">
+                         <a href="">Home</a>
+                         <a href="#features">Features</a>
+                         <a href="#about">About</a>
+                         <a href="#contact">Contact</a>
+                         <!-- <div class="form">
+                              <a href="login.php">Login</a>
+                              <p>|</p>
+                              <a href="signup.php">Register</a>
+                         </div> -->
+                    </div>
+                    <i class='Menu' id="Menu"></i>
+                    <i class='closeBtn' id="closeBtn"></i>
+               </nav>
+               
+
+               <div class="landing-page">
+                    <div class="text" data-aos="slide-down">
+                         <p><span>VIT's</span> CRYPTOCOIN</p>
+                         <h1>PAYMENTS MADE SIMPLE </h1>
+                         <p>Get Connected with your Blockchain Wallet</p>
+                       <a href="connect.html"><button>Get Started</button></a>
+                    </div>
+                    <div class="image" data-aos="zoom-in">
+                         <img src="./images/translogo.png" alt="">
+                    </div>
+               </div>
+          </div>
+     </header>
+
+     <div class="why">
+          <div class="why-content">
+               <div class="figures">
+                    <div class="Vellore">
+                         <img src="./images/vit.png" alt="vit logo">
+                         <div class="txt">
+                              <h2>VELLORE</h2>
+                              <p>*Supported Region</p>
+                         </div>
+                    </div>
+                    <div class="Chennai">
+                         <img src="./images/vit.png" alt="vit logo">
+                         <div class="txt">
+                              <h2>CHENNAI</h2>
+                              <p>*Supported Region</p>
+                         </div>
+                    </div>
+                    <div class="Bhopal">
+                         <img src="./images/vit.png" alt="vit logo">
+                         <div class="txt">
+                              <h2>BHOPAL</h2>
+                              <p>*Supported Region</p>
+                         </div>
+                    </div>
+                    <div class="AP">
+                         <img src="./images/vit.png" alt="vit logo">
+                         <div class="txt">
+                              <h2>AP-Amravati</h2>
+                              <p>*Supported Region</p>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="content">
+                    <div class="image" data-aos="zoom-in">
+                         <img src="./images/viteth.png" alt="">
+                    </div>
+                    <div class="text" data-aos="zoom-out">
+                         <h1>Add the VITCOIN token to your Metamask wallets  today!</h1>
+                         <p>Experience the next generation cryptocurrency platform</p>
+                         <a href="addtoken.html"><button>Connect</button></a>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <div class="transaction" id="about" >
+          <div class="transaction-content">
+               <h1>Trade in different cryptocurrencies</h1>
+               
+          </div>
+
+          <div class="payment" data-aos="zoom-in">
+               <div class="inputs">
+                   
+                    <input type="text" id="cnv" placeholder="Enter the amount">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                   <input type="text" id="unt" placeholder="Enter the coversion unit(BTC/ETH/LTC)">
+                   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                   <input type="button" value="CONVERT" style="background-color:#2B076E;color:aliceblue " onclick="convertx()">
+                   <script>
+                    function convertx(){
+                         vtc = document.getElementById('cnv').value;
+                         unt = document.getElementById('unt').value;
+                         x=parseInt(vtc);
+                         if(unt=="BTC"||unt=="btc"){
+                              vt = x/1366272;
+                              document.getElementById('cnvr').innerHTML="<h3>"+vt+"<span style='color:grey'><sup>&nbspBTC</sup></span>";
+                         }
+                         if(unt=="LTC"||unt=="ltc"){
+                              vt = x/4730;
+                              document.getElementById('cnvr').innerHTML="<h3>"+vt+"<span style='color:grey'><sup>&nbspLTC</sup></span>";
+                         }
+                         if(unt=="ETH"||unt=="eth"){
+                              vt = x/102311;
+                              document.getElementById('cnvr').innerHTML="<h3>"+vt+"<span style='color:grey'><sup>&nbspETH</sup></span>";
+                         }
+                         
+                    
+                    }
+                   </script>
+               </div>
+               
+              <center> <div id="cnvr" style="position: relative; bottom:30px;color: blue;"></div> </center>
+               <p>Powered by metamask</p>
+               <h2>Estimated amount of alts for <span>VITCOIN</span> swap</h2>
+               <p>100% Secured </p>
+          </div>
+     </div>
+
+     <div class="crypto">
+          <div class="crypto-content">
+               <h1></h1>
+               <div class="cryptocurrencies">
+                    <div class="cryptocurrency bitcoin " id="bitcoin" data-aos="slide-up">
+                         <img src="./images/btc.png" alt="bitcoin">
+                         <h1> Bitcoin </h1>
+                         <i class='btc-btn' id="btc-btn"></i>
+                        <a href="https://bitcoin.org/en/"> <button class="changebtn" id="buy-btc">Buy in BTC</button></a>
+                    </div>
+
+                    <div class="cryptocurrency ethereum" id="ethereum" data-aos="slide-up">
+                         <img src="./images/eth.png" alt="bitcoin">
+                         <h1> Ethereum </h1>
+                         <i class='eth-btn' id="eth-btn"></i>
+                        <a href="https://ethereum.org/en/"> <button class="changebtn" id="buy-eth">Buy in ETH</button></a>
+                    </div>
+
+                    <div class="cryptocurrency litecoin" id="litecoin" data-aos="slide-up">
+                         <img src="./images/lte.png" alt="bitcoin">
+                         <h1> Litecoin </h1>
+                         <i class='lte-btn' id="lte-btn"></i>
+                         <a href="https://litecoin.com/en/"><button class="changebtn" id="buy-lte">Buy in LTC</button></a>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <div class="features" id="features">
+          <div class="features-content">
+               <h1> NOW  TRANSACT  USING   VITCOIN  <sup> VTC </sup></h1>
+               <div class="invest-smart container">
+                    <div class="text" data-aos="zoom-in">
+                         <h2>Reliable payments infrastructure</h2>
+                         <p>Vitcoin Payment Gateway offers 99.99% uptime and the best success rates in the industry. A customer gets 
+                         to check out without having to try it more than once, and payment failures are almost non-existent. There 
+                         would be no instance of money being debited and a payment being stuck; or similar experiences that leave 
+                         customers frustrated.</p>
+                         <a href="connect.html"> <button>Learn More</button> </a>
+                    </div>
+                    <div class="image" data-aos="flip-down">
+                         <img src="1.jpg" alt="">
+                    </div>
+               </div>
+               
+               <div class="detailed-statistics container">
+                    <div class="image" data-aos="flip-down">
+                         <img src="3.jpg" alt="">
+                    </div>
+                    <div class="text" data-aos="zoom-in">
+                         <h2> Get onboarded instantly </h2>
+                         <p>Easily start transacting with Vitcoin by just connecting your metamask wallet and swapping some
+                              Bitcoin or Ethereum or Litecoin for exchange of Vitcoin and you are ready to trade.
+                         </p>
+                        <a href="connect.html"> <button>Learn More</button></a>
+                    </div>
+               </div>
+               
+               <div class="grow-profit container">
+                    <div class="text" data-aos="zoom-in">
+                         <h2>It’s secure and safe to use</h2>
+                         <p>Small and new online merchants are viewed with suspicion by their potential customers. Apart from payment 
+                         failures, customers hold privacy concerns about sensitive payment data.Vitcoin Payment Gateway ensures security, 
+                         and complies to all safety regulations. It has an SSL certificate that ensures users’ money is secure.</p>
+                        <a href="connect.html"> <button>Learn More</button></a>
+                    </div>
+                    <div class="image" data-aos="flip-down">
+                         <img src="2.jpg" alt="">
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <div class="trading" id="contact">
+          <div class="trading-content">
+               <div class="text">
+                    <h3>Start Trading Today</h3>
+                    <p>Join the VITCOIN community now to get the latest news and updates</p>
+               </div>
+               <div class="form">
+                    <form>
+                    <input type="email" placeholder="Enter your email">
+                    <input type="button" value="Subscribe" onclick="subscribe()" >
+               </form>
+               </div>
+          </div>
+     </div>
+
+     <footer>
+          <div class="footer-content">
+               <div class="top">
+                    <div class="logo">
+                         <img src="./images/Logo.png" alt="logo">
+                         <h3> VITCOIN <sup> VTC </sup></h3>
+                    </div>
+                    <div class="column">
+                         <h3>Quick Link</h3>
+                         <a href="">Home</a>
+                         <a href="#about">About</a>
+                         <a href="#features">Features</a>
+                         <a href="#contact">Contact</a>
+                    </div>
+                    <div class="column">
+                         <h3>Resources</h3>
+                         <a href="https://www.allcryptowhitepapers.com/whitepaper-overview/">Download Whitepapper</a>
+                         <a href="https://smarttokenlabs.com/">Smart Token</a>
+                         <a href="https://blockchair.com/">Blockchain Explorer</a>
+                         <a href="https://cryptoapis.io/">Crypto API</a>
+                    </div>
+               </div>
+          </div>
+     </footer>
+
+     <!-- AOS -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+          AOS.init();
+     </script>
+</body>
+</html>

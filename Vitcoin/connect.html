@@ -1,0 +1,45 @@
+<html>
+    <head> 
+    <title>VITCOIN</title>
+     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+     
+    </head>
+<div id="balance" style="position: absolute; left:75% ;bottom:90%;color: rgb(254, 67, 213);" >USER BALANCE:</div>   
+<div id="vbalANCE" style="position: absolute; left:80% ;bottom:86%;color: rgb(254, 67, 213);" >IN VTC:</div>   
+<div id="vbal" style="position: absolute; left:85% ;bottom:86%;color: chartreuse;">NA</div>
+<div id="bal" style="position: absolute; left:85% ;bottom:90%;color: chartreuse;">NA</div>
+<div id="transact" style="position: absolute; left: 85%;bottom:10%;color: chartreuse;"></div>
+    <div id="logo-container"></div>
+    
+<link rel="stylesheet" href="addtoken.css">
+<link rel="stylesheet" href="metamask.css">
+</div>
+
+
+<script src="metamask.js" defer></script>
+<script src="addtoken.js" class="add"></script>
+<button id="mtm" name="mtm">Connect To Metamask</button>
+<script>document.getElementById('mtm').addEventListener('click', event => {
+    let account;
+    ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
+      account = accounts[0];
+      console.log(account);
+   let button = event.target;
+     button.textContent = account;
+     ethereum.request({method: 'eth_getBalance' , params: [account, 'latest']}).then(result => {
+  console.log(result);
+  let wei = parseInt(result,16); 
+let balance = wei / (10**18);
+document.getElementById('bal').innerHTML=balance+" ETH";
+vbal = balance*102311;
+document.getElementById('vbal').innerHTML=vbal+"  VTC";
+document.getElementById('transact').innerHTML="<h2><a href='transactions.html'>TRANSACT</a></h2>"
+
+
+
+});
+  
+    });
+  });
+  
+</script>

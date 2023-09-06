@@ -1,0 +1,60 @@
+body
+{
+  background-image: url("./images/Logo.png");
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  
+background: rgb(85,0,255);
+background: linear-gradient(90deg, rgba(85,0,255,1) 35%, rgba(214,0,255,1) 100%);
+
+}
+
+button
+{
+  background-color: #2B076E;
+  background-size: 200% 200%;
+  border:none;
+  padding:30px 70px;
+  border-radius:40px;
+  color:#fff;
+  font-size:20px;
+  text-transform:uppercase;
+    transition:ease-in all .5s;
+  animation:button infinite alternate 5s;
+}
+button:hover
+{
+  cursor:pointer;
+  background-color: rgb(24, 198, 166);
+  color: blue;
+}
+
+@keyframes button
+{
+  0% {		background-position: 0% 50%;
+}
+  100% {		background-position: 100% 70%;
+}
+}
+body {
+	background: linear-gradient(-45deg, #f2ea05, #e60a5e, #931fd6, #08eb1b);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	height: 100vh;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

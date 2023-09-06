@@ -1,0 +1,550 @@
+:root{
+     --color1: #0D0D2B;
+     --color2: #2B076E;
+     --color5: #3671E9;
+     --color3: rgba(54, 114, 233, 0.5);
+     --color4: #FFFFFF;
+     --color6: linear-gradient(180deg, #F8F9FB 0%, #FAFBFF 100%);
+     --color7: #828282;
+     --color8: #BDBDBD;
+     --color9: #E0E0E0;
+     --color10: #F2F2F2;
+}
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'rubik';
+}
+
+::-webkit-scrollbar{
+     width: 5px;
+}
+::-webkit-scrollbar-track{
+     background-color: var(--color8);
+}
+::-webkit-scrollbar-thumb{
+     background-color: var(--color1);
+     border-radius: 5px;
+}
+body{
+     width: 100%;
+     height: 100%;
+}
+body[data-aos-duration='4000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='4000'] {
+     transition-duration: 3000ms;
+}
+body p, body a{
+     font-weight: 300;
+}
+body button{
+     outline: none;
+     border: none;
+     cursor: pointer;
+}
+body .logo,
+body a{
+     cursor: pointer;
+}
+body input[type='submit']{
+     cursor: pointer;
+}
+header{
+     background: var(--color1);
+     color: var(--color4);
+     padding: 45px 0;
+}
+header .header-content{
+     max-width: 90%;
+     margin: auto;
+}
+header .header-content h3 sup{
+     font-size: 14px;
+     color: var(--color8);
+     font-weight: 500;
+}
+header .header-content nav{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+header .header-content nav .logo{
+     display: flex;
+     align-items: center;
+     gap: 10px;
+}
+header .header-content nav .links{
+     display: flex;
+     align-items: center;
+     gap: 20px;
+}
+header .header-content nav .links a{
+     text-decoration: none;
+     color: var(--color4);
+     font-weight: 400;
+     font-size: 14px;
+     border-bottom: 2px solid transparent;
+}
+header .header-content nav .links a:hover{
+     border-bottom: 2px solid var(--color4);
+}
+header .header-content nav .links .form{
+     display: flex;
+     align-items: baseline;
+     gap: 10px;
+}
+header .header-content nav .links .form a:last-child{
+     background-color: var(--color5);
+     color: var(--color4);
+     border-radius: 18px;
+     padding: 10px 18px;
+}
+header .header-content nav .links .form a:last-child:hover{
+     border-bottom: none;
+     background-color: var(--color2);
+}
+header .header-content nav i{
+     font-size: 30px;
+     display: none;
+}
+header .header-content .landing-page{
+     display: flex;
+     align-items: center;
+}
+header .header-content .landing-page .text{
+     width: 50%;
+}
+header .header-content .landing-page .text p:first-child{
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     background-color: var(--color2);
+     border-radius: 15px;
+     width: fit-content;
+     padding: 10px;
+     height: 1.55rem;
+     padding-left: 0;
+     font-size: 12px;
+     margin-bottom: 10px;
+}
+header .header-content .landing-page .text p:first-child span{
+     background-color: var(--color4);
+     color: #000;
+     border-radius: 15px;
+     padding: 0 10px;
+     height: 1.55rem;
+     display: flex;
+     align-items: center;
+     font-weight: normal;
+}
+header .header-content .landing-page .text h1{
+     font-size: 55px;
+     margin-bottom: 5px;
+}
+header .header-content .landing-page .text p:nth-child(3){
+     font-size: 12px;
+     width: 65%;
+     font-weight: 300;
+     margin-bottom: 10px;
+}
+header .header-content .landing-page .text button{
+     background-color: var(--color5);
+     border-radius: 1.75rem;
+     padding: 8px 10px;
+     color: var(--color4);
+     display: flex;
+     align-items: center;
+     gap: 7px;
+}
+header .header-content .landing-page .text button:hover{
+     background-color: var(--color3);
+}
+header .header-content .landing-page .text button i{
+     background-color: var(--color4);
+     border-radius: 50%;
+     padding: 5px;
+     color: var(--color5);
+}
+header .header-content .landing-page .image{
+     width: 50%;
+}
+header .header-content .landing-page .image img{
+     width: 100%;
+}
+.why{
+     background-color: var(--color1);
+     color: var(--color4);
+     position: relative;
+     overflow: hidden;
+}
+.why .why-content{
+     max-width: 90%;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     gap: 100px;
+}
+.why .why-content .figures{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+}
+.why .why-content .figures .number{
+     display: flex;
+     align-items: center;
+     gap: 10px;
+}
+.why .why-content .figures .number img{
+     width: 25%;
+}
+.why .why-content .figures .number .txt p{
+     font-size: 12px;
+}
+.why .why-content .content{
+     display: flex;
+     align-items: center;
+     gap: 50px;
+}
+.why .why-content .content .image{
+     width: 55%;
+}
+.why .why-content .content .image img{
+     width: 100%;
+}
+.why .why-content .content .text h1{
+     margin-bottom: 15px;
+}
+.why .why-content .content .text p{
+     font-size: 12px;
+     width: 55%;
+     line-height: 20px;
+     margin-bottom: 15px;
+}
+.why .why-content .content .text button{
+     color: var(--color4);
+     background-color: var(--color5);
+     border-radius: 20px;
+     padding: 10px 15px;
+}
+.why .why-content .content .text button:hover{
+     background-color: var(--color3);
+}
+.transaction{
+     background-color: var(--color1);
+     position: relative;
+}
+.transaction .transaction-content{
+     max-width: 50%;
+     margin: auto;
+     text-align: center;
+     color: var(--color4);
+     padding-top: 100px;
+     padding-bottom: 200px;
+}
+.transaction .transaction-content h1 sup{
+     font-size: 14px;
+     color: var(--color8);
+     font-weight: 500;
+}
+.transaction .payment{
+     position: absolute;
+     width: 55%;
+     margin: auto;
+     top:75%;
+     left: 0;
+     right: 0;
+     background-color: var(--color4);
+     box-shadow: 0px 1px 80px rgba(57, 23, 120, 0.25);
+     border-radius: 1rem;
+     padding: 25px;
+}
+.transaction .payment .inputs{
+     margin-bottom: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.transaction .payment .inputs input[type='text']{
+     width: 45%;
+     padding: 10px;
+     padding-bottom: 0;
+     padding-left: 0;
+     border: none;
+     border-bottom: 1px solid var(--color7);
+}
+.transaction .payment .inputs select{
+     width: 25%;
+     padding: 10px;
+     padding-bottom: 0;
+     padding-left: 0;
+     border: none;
+     border-bottom: 1px solid var(--color7);
+}
+.transaction .payment .inputs input:focus{
+     outline: none;
+     border-bottom: 1px solid var(--color7);
+}
+.transaction .payment .inputs input[type='submit']{
+     background-color: var(--color5);
+     border-radius: 1rem;
+     padding: 8px 12px;
+     border: none;
+     color: var(--color4);
+}
+.transaction .payment .inputs select:focus{
+     outline: none;
+}
+.transaction .payment p:nth-child(2){
+     color: var(--color5);
+     font-size: 11px;
+     font-weight: 500;
+     margin-bottom: 1rem;
+}
+.transaction .payment h2{
+     margin-bottom: 8px;
+}
+.transaction .payment span{
+     color: var(--color5);
+}
+.transaction .payment p:nth-child(4){
+     color: var(--color7);
+     font-size: 13px;
+}
+.crypto .crypto-content{
+     max-width: 90%;
+     margin: auto;
+}
+.crypto .crypto-content > h1{
+     width: 55%;
+     text-align: center;
+     line-height: 45px;
+     padding: 200px 0 50px;
+     margin: auto;
+}
+.crypto .crypto-content .cryptocurrencies{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 50px;
+}
+.crypto .crypto-content .cryptocurrency{
+     text-align: center;
+     width: 25%;
+     border-radius: 15px;
+     padding: 20px;
+     margin-bottom: 25px;
+     transition: 0.5s;
+     cursor: pointer;
+}
+.crypto .crypto-content .cryptocurrency h1{
+     font-size: 20px;
+     margin: auto;
+     width: fit-content;
+     margin-bottom: 15px;
+}
+.crypto .crypto-content .cryptocurrency p{
+     font-size: 12px;
+     margin-bottom: 25px;
+}
+.crypto .crypto-content .cryptocurrency button{
+     display: none;
+     margin: auto;
+     background-color: var(--color5);
+     color: var(--color4);
+     border-radius: 18px;
+     padding: 10px 12px;
+     border: none;
+     cursor: pointer;
+}
+.crypto .crypto-content .cryptocurrency button{
+     display: none;
+}
+.crypto .crypto-content .cryptocurrency button i{
+     color: var(--color5);
+     background-color: var(--color4);
+     border-radius: 50%;
+     padding: 3px;
+}
+.crypto .crypto-content .cryptocurrency > i{
+     font-size: 20px;
+     color: var(--color5);
+     background-color: transparent;
+     border: 2px solid var(--color8);
+     padding: 8px;
+     border-radius: 50%;
+     width: fit-content;
+     margin: auto;
+}
+.crypto .crypto-content .active{
+     background-color: var(--color2);
+     color: white;
+}
+.crypto .crypto-content .active button{
+     display: block;
+}
+.crypto .crypto-content .active > i{
+     display: none;
+}
+.features{
+     background-color: var(--color2);
+     position: relative;
+     color: var(--color4);
+     overflow: hidden;
+     padding: 50px 0;
+}
+
+
+.features h1{
+     text-align: center;
+     width: 55%;
+     margin: auto;
+     margin-bottom: 45px;
+}
+.features h1 sup{
+     font-size: 14px;
+     color: var(--color8);
+     font-weight: 500;
+}
+.features .invest-smart,
+.features .grow-profit{
+     margin: auto;
+}
+.features .container{
+     max-width: 85%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 50px;
+     margin-bottom: 75px;
+}
+.features .container .text{
+     width: 35%;
+}
+.features .container .text h2{
+     margin-bottom: 20px;
+}
+.features .container .text p{
+     font-size: 12px;
+     margin-bottom: 20px;
+}
+.features .container .image{
+     width: 50%;
+}
+.features .container .text button{
+     background-color: var(--color5);
+     border-radius: 1rem;
+     padding: 10px 12px;
+     color: var(--color4);
+     font-size: 12px;
+     border: none;
+}
+.features .container .text button:hover{
+     background-color: var(--color3);
+}
+.features .container .image img{
+     width: 100%;
+}
+.trading{
+     background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding: 50px 0;
+}
+.trading .trading-content{
+     width: 55%;
+     margin: auto;
+     border-radius: 1rem;
+     padding: 30px 25px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background: var(--color5);
+     color: var(--color4);
+     position: relative;
+     overflow: hidden;
+}
+
+.trading .trading-content .text{
+     width: 42%;
+}
+.trading .trading-content .text h3{
+     margin-bottom: 10px;
+}
+.trading .trading-content .text p{
+     font-size: 10px;
+}
+.trading .trading-content .form{
+     display: flex;
+     align-items: center;
+     gap: 25px;
+}
+.trading .trading-content .form input[type='text']{
+     background-color: transparent;
+     border: none;
+     border-bottom: 1px solid var(--color4);
+     padding: 2px;
+}
+.trading-content .form input[type='text']::placeholder{
+     color: var(--color4);
+     font-size: 10px;
+}
+.trading .trading-content .form input[type='submit']{
+     border: none;
+     border-radius: 1rem;
+     font-size: 10px;
+     background-color: var(--color4);
+     color: black;
+     padding: 8px 12px;
+     font-weight: 600;
+}
+.trading .trading-content .form input:focus{
+     outline: none;
+     caret-color: white;
+}
+footer{
+     background: var(--color1);
+     padding: 25px 0;
+     color: var(--color4);
+}
+footer .footer-content{
+     max-width: 90%;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     gap: 45px;
+}
+footer .footer-content .top{
+     display: flex;
+     justify-content: space-between;
+}
+footer .footer-content .top .logo{
+     display: flex;
+     height: fit-content;
+     align-items: center;
+     gap: 10px;
+}
+footer .footer-content .top .logo h3{
+     font-family: 'inter';
+}
+footer .footer-content .top .logo h3 sup{
+     font-size: 14px;
+     color: var(--color8);
+     font-weight: 500;
+}
+footer .footer-content .top .column h3{
+     margin-bottom: 20px;
+     font-size: 1rem;
+}
+footer .footer-content .top .column a{
+     display: block;
+     text-decoration: none;
+     color: var(--color4);
+     margin-bottom: 10px;
+     font-size: 12px;
+}
+footer .footer-content .top .column a:hover{
+     color: var(--color5);
+}
+
+

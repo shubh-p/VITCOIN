@@ -1,0 +1,67 @@
+#trnsimg{
+    width: 420px;
+    height: 200px;
+    margin-left: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+    position: absolute;
+    left: 800px;
+    top: 130px;
+}
+
+
+#trns{
+    width: 420px;
+    height: 200px;
+    margin-left: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+    position: absolute;
+    left: 910px;
+    backdrop-filter: blur(5px);
+    top: 250px;
+    
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #3498db;
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    color: #3498db;
+    font-size: 1.5em;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+#d1{
+    position: absolute;
+    bottom: 280px;
+    left: 340px;
+    color: aqua;
+
+}
+
+#banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#d2{ position: absolute;
+    bottom: 260px;
+    right: 300px;
+    color: aqua;
+}
