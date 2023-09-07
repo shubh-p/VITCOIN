@@ -70,7 +70,7 @@ Feel free to explore these screenshots to get a glimpse of the application's use
 
 ## Demo link
 
-You can watch the demo video here : [Click here](https://drive.google.com/file/d/1XFUku_E0r37stEp3jJzTcWaS4cAtCia0/view?usp=sharing)
+You can watch the demo video here : [Click here](https://drive.google.com/file/d/1qYzYrtm3GnSuGD3eR4JhrG-DP0FmowMH/view?usp=drive_link)
 
 
 ## Getting Started
