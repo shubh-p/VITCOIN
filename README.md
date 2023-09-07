@@ -40,7 +40,7 @@ Use your metamask wallet to login to the application , to execute transactions
 See account balance and transact in Vitcoins
 ![image](https://github.com/shubh-p/VITCOIN/assets/89768939/68449083-6cb0-4476-893f-fffaea170ffb)
 
-Executing a transaction
+Executing a transaction : paying to vit margheritally ice cream
 ![image](https://github.com/shubh-p/VITCOIN/assets/89768939/900823b3-ac00-4a2f-abaa-c3ff16aaadf4)
 
 Transaction Execution
