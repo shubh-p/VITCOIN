@@ -1,7 +1,7 @@
 # FRT: Future Ready Talent Project by Shubhlaxh Porwal
 
 # Vitcoin
-An innovative e-learning platform aimed at bridging the gap in accessible, high-quality education. The platform addresses the challenge of limited educational opportunities by offering a diverse range of world-class courses. This strategic approach enables potential learners to to explore a variety of subjects and interact with platform features.
+This project addresses the inefficiencies, lack of transparency, and security issues in the payment systems used by large organizations, with a specific focus on colleges. The project aims to create a blockchain-based payment infrastructure using ERC-20 tokens to provide a secure, transparent, and user-friendly platform for financial transactions.
 
 ## Tech stack used
 HTML , CSS , JS , PHP , Solidity , Azure Storage accounts , Azure Static Web Apps , Azure Front Door
